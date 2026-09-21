@@ -30,7 +30,7 @@ public class Register extends HttpServlet {
 		
 		String url = "jdbc:mysql://localhost:3306/akhil";
 		String user = "root";
-		String password = "@Wzkejy69ts";
+		String password = "@Wzy69ts";
 		String query= """
 				INSERT INTO users (name,userName,email,password,branch ) VALUES (?,?,?,?,?)
 		""";
