@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+
+    <div class="glass-container">
+        
+        <!-- Header Section -->
+        <div class="header-section">
+            <h2>Student <span class="gradient-text">Registration Form</span></h2>
+            <p class="subtitle">Fill in your details to get started with your academic journey.</p>
+            
+            <div class="divider">
+                <span></span>
+            </div>
+        </div>
+
+        <!-- Form Section -->
+        <form action="Register" method="POST">
+            
+            <!-- Full Name -->
+            <div class="input-group">
+                <label>Full Name</label>
+                <div class="input-wrapper">
+                    <input type="text" name="fullName" placeholder="Enter your full name" required>
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <label>User Name</label>
+                <div class="input-wrapper">
+                    <input type="text" name="userName" placeholder="Enter your user name" required>
+                </div>
+            </div>
+
+            <!-- Email -->
+            <div class="input-group">
+                <label>Email Address</label>
+                <div class="input-wrapper">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                </div>
+            </div>
+
+            <!-- Password -->
+            <div class="input-group">
+                <label>Password</label>
+                <div class="input-wrapper">
+                    <input type="password" name="password" placeholder="Enter your password" required>
+                </div>
+            </div>
+
+            <!-- Course -->
+            <div class="input-group">
+                <label>Course / Branch</label>
+                <div class="input-wrapper">
+                    <select name="branch" required>
+                        <option value="" disabled selected>Select your course/branch</option>
+                        <option value="CSE">Computer Science Engineering</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="ECE">Electronics  Communication</option>
+                        <option value="BCA">BCA / MCA</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">
+                Register
+            </button>
+            
+            <!-- Footer -->
+            <div class="form-footer">
+                Your data is safe with us
+            </div>
+            
+        </form>
+    </div>
+
+</body>
+</html>
